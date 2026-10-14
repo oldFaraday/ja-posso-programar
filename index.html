@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Já posso programar?</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Tela inicial -->
+        <section id="tela-inicial" class="tela">
+            <h1><strong>Já posso</strong> programar?</h1>
+            <p>Responda 50 perguntas sobre tecnologias solicitadas em vagas júnior de desenvolvimento no Brasil e descubra sua preparação para o mercado.</p>
+            <button id="btn-comecar" class="btn-primario">Começar</button>
+        </section>
+
+        <!-- Tela de pergunta -->
+        <section id="tela-pergunta" class="tela">
+            <div class="progresso">
+                <div class="barra-container">
+                    <div id="barra-progresso" class="barra"></div>
+                </div>
+                <span id="contador">0 / 50</span>
+            </div>
+            <div id="pergunta-card" class="card-pergunta">
+                <p id="enunciado" class="enunciado"></p>
+                <div id="alternativas" class="alternativas"></div>
+                <button id="btn-nao-sei" class="btn-nao-sei btn-secundario">Não sei</button>
+            </div>
+            <div id="feedback" class="feedback" hidden></div>
+            <button id="btn-proxima" class="btn-primario" hidden>Próxima</button>
+        </section>
+
+        <!-- Tela de resultado -->
+        <section id="tela-resultado" class="tela">
+            <div id="resultado-card" class="card-resultado">
+                <div id="circulo-resultado" class="circulo-resultado">
+                    <span id="percentual">0%</span>
+                </div>
+                <p id="mensagem-resultado" class="mensagem-resultado"></p>
+                <h3>Desempenho por área</h3>
+                <div id="areas-resumo" class="areas-resumo"></div>
+                <h3>Sugestão de estudo</h3>
+                <p id="sugestao-estudo" class="sugestao-estudo"></p>
+                <div class="botoes-resultado">
+                    <button id="btn-refazer" class="btn-primario">Refazer quiz</button>
+                    <button id="btn-inicio" class="btn-secundario">Voltar ao início</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/tecnologias.js" charset="utf-8"></script>
+    <script src="js/perguntas.js" charset="utf-8"></script>
+    <script src="js/app.js" charset="utf-8"></script>
+</body>
+</html>
