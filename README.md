@@ -29,6 +29,8 @@ A lista foi obtida por meio de uma pesquisa simples em 29 vagas júnior de desen
 3. Fonte: `main` branch, diretório `/`.
 4. Clique em Save. O site será publicado em `https://<usuario>.github.io/<repositorio>/`.
 
+Obs.: Esse projeto está visível em "https://oldFaraday.github.io/ja-posso-programar/"
+
 ## Como contribuir com novas perguntas
 
 - Edite o arquivo `js/perguntas.js`.
